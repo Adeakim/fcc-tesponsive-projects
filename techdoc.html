@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+</head>
+<style>
+ body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+}
+#navbar{
+  position: fixed;
+  min-width: 300px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: black;
+}
+header{
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+#main-doc header{
+  text-align: left;
+  margin: 0px;
+}
+#navbar ul{
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar li{
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+}
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+#main-doc{
+  position: absolute;
+  margin: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+section article{
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.9em;
+}
+section li{
+  margin: 15px 0px 0px 20px;
+}
+
+
+  @media only screen and (max-width: 870px){#navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+}}
+
+
+
+</style>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div id="flex">
+
+  
+    <nav id="navbar">
+        <header>INDUSTRIAL ENZYMES</header>
+        <ul>
+            <li>
+              <a class="nav-link" href="#Historical_Background">Historical Background</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Enzyme_Classification">Enzyme Classification</a>
+            </li>
+            <li><a class="nav-link" href="#Enzyme_Production">Enzyme Production</a></li>
+            <li><a class="nav-link" href="#Enzyme_production_by_microbial_fermentation">Enzyme Production by microbial fermentation</a></li>
+            <li><a class="nav-link" href="#Microbial_production_strains">Microbial Production strains</a></li>
+            <li>
+              <a class="nav-link" href="#Protein_engineering">Protein Engineering</a>
+            </li>
+            <li><a class="nav-link" href="#Enzyme_technology">Enzyme Technology</a></li>
+            <li><a class="nav-link" href="#Large_scale_enzyme_applications">Large Scale enzyme applications</a></li>
+            <li><a class="nav-link" href="#Enzymes_in_DNA-technology">Enzymes in DNA-technology</a></li>
+            <li><a class="nav-link" href="#Enzymes_in_fine_chemical_production">Enzymes in fine chemical production</a></li>
+            <li>
+              <a class="nav-link" href="#Chirally_pure_amino_acids_and_aspartame">Chirally pure amino acids and aspartame</a>
+            </li>
+            <li><a class="nav-link" href="#Rare_sugars">Rare Sugars</a></li>
+            <li>
+              <a class="nav-link" href="#Lipase_based_reactions">Lipase based reactions</a>
+            </li>
+            <li><a class="nav-link" href="#Future_trends_in_industrial_enzymology">Future trends in industrial enzymology</a></li>
+          </ul>
+        </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Historical_Background">
+            <header>Historical Background</header>
+            <article>
+                <p>Most of the reactions in living organisms are catalyzed by protein molecules called enzymes.
+                    Enzymes can rightly be called the catalytic machinery of living systems. The real break 
+                    through of enzymes occured with the introduction of microbial proteases into washing powders.
+                    The first commercial bacterial Bacillus protease was marketed in 1959 and major detergent 
+                    manufactures started to use it around 1965.
+                </p>
+                <p>
+                    The industrial enzyme producers sell enzymes for a wide variety of applications. 
+                    The estimatated value of market is presently about US$2 billion. Detergents (37%),textiles
+                    (12%), starch(11%), baking(8%) and animal feed(6%) are main industries, which use about
+                     75% of industrially produced enzymes.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Enzyme_Classification">
+            <header>Enzyme Classification</header>
+            <article>
+                <p>
+                    Presently more than 3000 different enzymes have been isolated and classified. The enzymes
+                    are classified into six major categories based on the nature of the chemical reaction they 
+                    catalyze:
+                    <ol>
+                        <li>Oxidoreductase catalyze oxidation or reduction of substrates</li>
+                        <li>Transferase catalyze group transfer</li>
+                        <li>Hydrolase catalyze bond breakage with the addition of water</li>
+                        <li>Lyases remove groups from substrates</li>
+                        <li>isomerases catalyze intramolecular rearrangements</li>
+                        <li>Ligases catalyze the joining of two molecules at the expense of chemical energy</li>
+                    </ol>
+                </p>
+                </article>
+        </section>
+                <section class="main-section " id="Enzyme_Production">
+                  <header>Enzyme Production</header>
+                  <article>
+                    <p>
+                      Some enzymes still extracted from animal and planrt tissues. Enzymes such as papain,
+                      bromalain and ficin and other speciality enzymes like lipoxygenase are derived from plants
+                      and enzymes pepsin and rennin are derivedfrom animal. Most of the enzymes are produced by 
+                      microorganisms in submerged cultures in large reactors called fermentors. The enzyme 
+                      production process can be divided into following phases:
+                      <ol>
+                        <li>selection of enzyme</li>
+                        <li>selection of productin stain</li>
+                        <li>construction of an overproducing stain by genetic engineering</li>
+                        <li>optimization of recovery process</li>
+                         <li>formulationtion of stable enzyme product</li>
+                      </ol>
+                    </p>
+                    <p>Criteria used in the selection of an industrial enzyme include specificity, reaction rate, pH and 
+                      temperatureoptima and stability,effect of inhibitors an affinity to substrates. Enzymes used in the
+                      industrial applications must usually tolerant against various heavy metals and have no 
+                      need for cofactors. 
+                     </p>
+                  </article>
+                </section>
+          
+          <section class="main-section" id="Microbial_production_strains">
+            <header>Microbial production strains</header>
+            <article>
+              <code>
+                In choosing the prouction strain several aspects have to be considered. Ideally the enzymes is 
+                secreted from the cell. Secondly, the production host should have a GRAS-status. Thirdly, the 
+                organism should be able to produce hight amount of the desired enzyme in a reasonable life time frame.
+                Most of the industrially used microorganismshave been genetically modified to overproduce the desired 
+                activity and not to produce undesired sside activities.
+              </code>
+            </article>
+          </section>
+          <section class="main-section" id="Enzyme_production_by_microbial_fermentation">
+            <header>Enzyme production by microbial fermentation</header>
+            <article>
+              <p>
+                Once the biological production organism has been geneticallyengineered to overproduce the desrired 
+                products, a production process has to be developed. The optimization of a fermentation process includes 
+                media composition, cultivation type and process conditions.The large volume industrial industrial enzymes
+                are produced in 50-500m<sup>3</sup> fermenters.
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="Protein_engineering">
+            <header>Protein Engineering</header>
+            <article>
+              <p>
+              Often enzymes do not have the desired properties for an iddustrial application. One option is find a better 
+              enzyme from nature.Another option is to be a better industrial catalyst.Two different methods are presently
+               available: a random method called directed evaluation and a protein engineerng method called rational design.
+              </p>
+            </article>
+
+          </section>
+          <section class="main-section" id="Enzyme_technology">
+            <header>Enzyme technology</header>
+            <article>
+            <p>
+              THis field deals with how are the enzymes used and applied in practical processes. The simplest way to use enzyme
+              is to add them into a process stream where they catalyze the desired reation and gradually inactivated during the process.
+              This happens in many bulk enzyme applications and the price of the enzymes must be low to make their use economical.  
+            </p>
+            <code>An alternative way to use enzymes is to immobilize them so that they can be reused. The large enzyme molecule cannot pass 
+              thruogh the membrane but the small molecular reaction products can. Many different laboratory methods of enzyme immobilization
+              based on chemical reaction, entrapment, specific binding or absorbtion have been developed.
+            </code>
+            </article>
+          </section>
+          <section class="main-section" id="Large_scale_enzyme_applications">
+            <header>Large scale Enzyme applications</header>
+            <article>
+              <ol>
+                <li> <dl> Detergents</dl>
+                  <dt> Bacterial proteinases are still the most important detergent enzymes.Lipases decompose fats into more water soluble compounds.
+                  Amylases are used in detergents to remove starch based stains.</dt>  
+                </li>
+                <li>
+                  <dl>Starch hydrolysis and fructose production</dl>
+                  <dt>The use of degrading enzymes was the first large scale application of microbial enzymes in food industry.
+                    Mainly two enzymes carry out conversion of starch to glucose: alpha amylase and fungal enzymes.. Fructose produced
+                    from sucrose as a starting material. Sucrose is split by invertase into glucose and fructose, fructose separated and crystallized.
+                  </dt>
+                </li>
+                <li>
+                  <dt>Drinks</dt>
+                  <dl>
+                    Enzymes have many applications drink industry. Luctase splits milk-sugar lactose into glucose and galactose.
+                    This process is used for milk products that are consumed by lactose into intolerant consumers.Addition of pectinase,
+                    xylanase and cellulase improve the liberation of the juicefrom pulp. Similarlyenzymes are widely used in wine production.
+                  </dl>
+                </li>
+              </ol>
+
+            </article>
+          </section>
+          <section class="main-section" id="Enzymes_in_DNA-technology">
+            <header>Enzymes in DNA-technology</header>
+            <article>
+              <code>
+              DNA-technology is an important tool in enzyme industry. Most traditional enzymes are produced by organisms, which have been geneticslly
+              modified to overproduce the desired enzyme. THe specific order of the organic bases in the chain of DNA constitutes the genetic
+              language. Genetic engineering means reading and modifying this language. ENzymes are crucial tools in this process.
+            </code>
+          </article>
+          </section>
+          <section class="main-section" id="Enzymes_in_fine_chemical_production">
+            <header>Enzymes in fine chemical production</header>
+            <article>
+            <p>
+              In spite of some successe, commercial production of chemicals by living cells using pathway engineering is still in many cases 
+              the best alternative to apply biocatalysis. Isolated enzymes have, however, been successfully used in fine chemical synthesis.
+              
+            </p>
+          </article>
+          </section>
+          <section class="main-section" id="Chirally_pure_amino_acids_and_aspartame">
+            <header>Chirally pure amino acids and aspartame</header>
+            <article>
+              <code>
+              Nature amino acids are usually produced by microbial fermentation. Novel enzymatic resolution methods have been developed 
+              for the production of L- as well as D-amino acids.Aspartame, the intensive non-calorie, is syntheized in the non-aqueos 
+              conditions by thermolysin, a proteolytic enzyme.
+            </code>
+            </article>
+          </section>
+          <section class="main-section" id="Rare_sugars">
+            <header>Rare sugars</header>
+            <article>
+              <p>
+              Recently enzymatic methods have beendeveloped to manufactue practically all D- and L- forms ofsimple sugars. Glucose isomerase
+              is one of the important industrial enzymes used in fructose manufacturing.</p>
+            </article>
+          </section>
+          <section class="main-section" id="Lipase_based_reactions">
+            <header>Lipase based reactions</header>
+            <article>
+              <p>
+                In addition to detergent to applications lipases can be used in vrsatile chemical reactions since they are active in organic 
+                solvents. Lipases used in transesterification and also used for anantiomeric separation of alcohols and separate racemic amine 
+                mixtures. Lipases have also been used to form aromatic and aliphatic polymers.
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="Future_trends_in_industrial_enzymology">
+            <header>Future trends in industrial enzymology</header>
+            <article>
+              <p>
+                Industrial enzyme market is growing steaditly. The reason for this lies in improved proved production efficiency
+                resulting in cheaper enzymes, in new application fields. Tailoring enzymes for specific applications will be a future 
+                trend with continously improving tools and understanding of structure-function relationshipps and increased search for enzymes
+                for excotic environment.
+              </p>
+              <code>
+                New technical tools to use enzymes as crystalline catalysts, ability to recycle cofactors, and engineering enzymes
+                to function in various solvents with multiple activities are important technological developments, which will 
+                steadily create new applications.
+              </code>
+              <p>
+                Dr. Prashantkumar Kudli Shrinivas has vast industrial experience of Arome chemiclas, Essential oils, Perfumery
+                and Flavour formulations. He is a parmanent member of Indian institute of CHemical Enginineers & NMR Association of India.
+              </p>
+            </article>
+          </section>
+
+
+
+    </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto;
+            background-image: linear-gradient( 115deg, rgba(58, 158, 108, 0.8), rgba(136, 206, 139, 0.7) ),
+             url(./favorite-3.jpg);
+        
+            }
+            h1{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-left: 30%;
+            }
+            h1+p{
+                margin-left: 30%;
+                padding-bottom: 10px;
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
+            }
+        form{
+            background-color: #00af66fd;
+            width: 600px;
+            margin-left: 30%;
+            padding: 10px;
+            font-size: 20px;
+            position: relative;
+            top: 0;
+            
+        }
+
+        #name,#email,#number{
+            width: 80%;
+            height: 40px;
+            padding: 15px;
+        }
+        ul{
+            list-style-type: none;
+            }
+        select{
+            width: 300px;
+            height: 40px;
+            padding: 10px;
+        }
+       
+        #comment{
+            margin:0px 0px 15px 0px;
+            width: 500px;
+            height: 100px;
+        } 
+        textarea+p{
+            text-align:end;
+        }
+        #submit{
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+            margin:0px 0px 15px 0px;
+            background-color: rgba(208, 255, 0, 0.87);
+        }
+    
+    </style>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<h1 id="title">Al Huda group of schools survey forms</h1>
+    <p id="description">Thank you for taking the time to help us improve our school</p>
+    <form id="survey-form">
+        <ul> 
+            <label id="name-label" for="name" ><li>NAME:</li>
+            
+                <input type="text" name="name" placeholder="ENTER YOUR NAME" id="name" required> 
+            </label>
+        </ul>
+        <ul>
+            
+            
+               <label id="email-label" for="email" >
+                   <li>EMAIL:</li> 
+                   <input type="email" name="email" id="email" placeholder="aaa@email.com" minlength="10" pattern="+.@email.com" size="30" required>
+               </label>
+        </label>
+        </ul>
+        <ul>
+            
+            
+            <label id="number-label" for="number" ><li>AGE:</li>
+                <input type="Number" name="number" placeholder="Enter your age" min="10" max="50" id="number" required>
+            </label></label>
+        </ul>
+        <ul>
+    
+             
+                <li> 
+                    <label for="current-role" class="role">Which option best describe your current role:</label>
+                </li>
+                <select id="dropdown">
+                    <option value="">select an option</option>
+                    <option value="student">student</option>
+                    <option value="unemployed">unemployed</option>
+                    <option value="employed">employed</option>
+                </select>
+                
+        </ul>
+        <ul>
+        <li>Would you reccommend Alhuda to people?</li>
+        <li><label for="definitely">
+        <input type="radio" name="recommendation" id="definitely" value="Definitely">Definitely</label></li>
+
+       <li> <label for="most-likely">
+            <input type="radio" name="recommendation" value="most-likely">Most likely</label></li>
+
+        
+        <li><label for="Not-sure" >
+            <input type="radio" name="recommendation" value="Not-sure">Not Sure</label></li>
+
+        </ul>
+        <ul class="right">classes that should be improved in the future
+            (check all that apply): 
+           <li> <label for="Junior-schools">
+                <input type="checkbox" name="improvement" value="Junior classes">Junior classes
+            </label></li>
+            <li><label for="Senior-schools">
+                <input type="checkbox" name="improvement" value="Senior classes">Senor-classes
+            </label></li>
+            <li><label for="Primary-school"><input type="checkbox" name="improvement" value="Primary classes">Primary classes
+            </label></li>
+        </ul>
+    
+          <ul>
+  <p>Any comments or suggestions</p>
+  <textarea name="comment" id="comment" cols="30" rows="10"placeholder="Write your comment here"></textarea>
+</ul>
+<ul>
+            <input type="submit"  value="Submit" id="submit" ></label>
+        </ul>
+
+    </form>
+</body>
+</html>
